@@ -1,0 +1,16 @@
+rows {
+  ID: "test1"
+  Name: "test1"
+  Description: "test1"
+  CallBack: 3
+  EffectList: "IncreaseAttack_P20"
+  EffectList: "IncreaseDefense_P20"
+}
+rows {
+  ID: "test2"
+  Name: "test2"
+  Description: "test2"
+  CallBack: 3
+  EffectList: "ReduceAttack_P20"
+  EffectList: "ReduceDefense_P20"
+}

@@ -1,0 +1,8 @@
+rows {
+  ID: "test"
+  Name: "test"
+  Icon: "test"
+  Target: 0
+  BuffList: "test1"
+  BuffList: "test2"
+}

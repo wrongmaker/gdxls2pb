@@ -1,0 +1,46 @@
+syntax = "proto2";
+
+package skill;
+
+// Skill 
+message Skill {
+  optional string ID = 1;  // 技能标识
+  optional string Name = 2;  // 技能名
+  optional string Icon = 3;  // 技能图标
+  optional int32 Target = 4;  // 技能目标0:目标全部1:目标随机
+  repeated string BuffList = 5;  // 技能BUFF列表
+}
+
+message SkillRows {
+  repeated Skill rows = 1;
+}
+
+// Buff 
+message Buff {
+  optional string ID = 1;  // BUFF标识
+  optional string Name = 2;  // BUFF名
+  optional string Description = 3;  // BUFF描述
+  optional int32 CallBack = 4;  // BUFF回调1:回合开始2:回合结束3:攻击前4:攻击后5:受击前6:受击后7:释放前8:释放后9:被治疗时10:使用卡牌时
+  repeated string EffectList = 5;  // 效果标识列表
+}
+
+message BuffRows {
+  repeated Buff rows = 1;
+}
+
+// Effect 
+message Effect {
+  optional string ID = 1;  // 效果标识
+  optional string Name = 2;  // 效果名
+  optional string Icon = 3;  // 效果图标
+  optional int32 IsStacked = 4;  // 效果是否叠加
+  optional int32 Duration = 5;  // 效果持续0:永久*:回合数
+  optional int32 Type = 6;  // 效果类型1:伤害2:护盾3:增减攻击4:增减防御
+  optional int32 UsePercent = 7;  // 效果使用百分比
+  optional int32 Value = 8;  // 效果数值伤害值护盾值
+}
+
+message EffectRows {
+  repeated Effect rows = 1;
+}
+

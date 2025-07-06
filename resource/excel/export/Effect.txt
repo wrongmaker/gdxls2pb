@@ -1,0 +1,36 @@
+rows {
+  ID: "IncreaseAttack_P20"
+  Name: "\345\242\236\344\274\24420%"
+  IsStacked: 1
+  Duration: 0
+  Type: 3
+  UsePercent: 1
+  Value: 20
+}
+rows {
+  ID: "ReduceAttack_P20"
+  Name: "\345\207\217\344\274\24420%"
+  IsStacked: 1
+  Duration: 0
+  Type: 3
+  UsePercent: 1
+  Value: -20
+}
+rows {
+  ID: "IncreaseDefense_P20"
+  Name: "\345\242\236\351\230\26220%"
+  IsStacked: 1
+  Duration: 0
+  Type: 4
+  UsePercent: 1
+  Value: 20
+}
+rows {
+  ID: "ReduceDefense_P20"
+  Name: "\345\207\217\351\230\26220%"
+  IsStacked: 1
+  Duration: 0
+  Type: 4
+  UsePercent: 1
+  Value: -20
+}
